@@ -1,0 +1,13 @@
+name: Hello, World!
+
+on: [push]
+jobs:
+  Hello-World:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print hello
+        run: echo "Hello, World!"
+      - name: Print date
+        run: date
+      - name: Print directory content
+        run: ls -la
