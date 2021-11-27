@@ -1,0 +1,12 @@
+on:
+  schedule:
+    - cron: '30 * * * *'
+
+jobs:
+  scheduled_healthcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: health check
+        uses: jtalk/url-health-check-action@v2
+        with:
+          url: https://sheltered-spire-47091.herokuapp.com/health
