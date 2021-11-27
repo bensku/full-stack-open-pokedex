@@ -29,3 +29,5 @@ jobs:
           heroku_app_name: "sheltered-spire-47091"
           heroku_email: "bmi@iki.fi"
           healthcheck: "https://sheltered-spire-47091.herokuapp.com/health"
+          checkstring: "green"
+          rollbackonhealthcheckfailed: true
